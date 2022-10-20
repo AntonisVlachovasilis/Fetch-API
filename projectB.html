@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projectB.css">
+    <title>Form Validation</title>
+</head>
+
+<body>
+    <div id="validation_form">
+        <form method="post" action="" id="registration_form" novalidate>
+            <div id="headline">
+                <h1>Φόρμα <span>Εγγραφής</span></h1>
+            </div>
+            <div class="form name">
+                <label for="name"> Όνομα</label>
+                <input type="text" placeholder="Όνομα" name="name" id="name" >
+                <div class="nameError" style="color: red; font-size: 10px;">
+                </div>
+            </div>
+            <div class="form surname">
+                <label for="surname">Επίθετο</label>
+                <input type="text" placeholder="Επίθετο" name="surname" id="surname">
+                <div class="surnameError" style="color: red; font-size: 10px;">
+                    
+                </div>
+            </div>
+            <div class="form phone">
+                <label for="telepnone">Τηλέφωνο Επικοινωνίας</label>
+                <input type="tel" placeholder="Τηλέφωνο" name="telephone" id="telephone" >
+                <div class="phoneError" style="color: red; font-size: 10px;">
+                   
+                </div>
+            </div>
+            <div class="form mail">
+                <label for="mail">Διεύθυνση Ηλεκτρονικού Ταχυδρομείου</label>
+                <input type="email" placeholder="Email" name="mail" id="mail">
+                <div class="mailError" style="color: red; font-size: 10px;">
+                    
+                </div>
+            </div>
+            <div class="form date">
+                <label for="birthdate">Ημερομηνία Γέννησης</label>
+                <input type="date" name="birthdate" id="birthdate">
+                <div class="dateError" style="color: red; font-size: 10px;">
+                    
+                </div>
+            </div>
+            <div class="form submition">
+                <input type="submit" value="Υποβολή" id="submit">
+            </div>
+        </form>
+    </div>
+    <script src="projectB.js"></script>
+</body>
+</html>
